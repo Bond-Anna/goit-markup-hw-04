@@ -86,10 +86,6 @@ header {
   margin-right: 50px;
 }
 
-.link {
-  
-}
-
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -421,20 +417,13 @@ a.down-contacts {
 }
 
 /* ICONS */
-.icon.mail {
-  width: 16px;
-  height: 12px;
+.icon {
+  display: flex;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon.tell {
-  width: 11px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.icon:hover {
+.icon:hover,
+.icon:active {
   color: var(--accent-color);
 }
