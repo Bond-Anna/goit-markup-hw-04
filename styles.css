@@ -59,6 +59,14 @@ header {
 .link {
   padding-top: 24px;
   padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  
 }
 
 .logo {
@@ -79,11 +87,7 @@ header {
 }
 
 .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  
 }
 
 .link:hover,
@@ -414,4 +418,23 @@ a.down-contacts {
 
   border: 1px solid #EEEEEE;
   border-top: 0px;
+}
+
+/* ICONS */
+.icon.mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon.tell {
+  width: 11px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon:hover {
+  color: var(--accent-color);
 }
