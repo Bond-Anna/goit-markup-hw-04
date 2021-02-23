@@ -107,8 +107,7 @@ header {
   text-align: center;
   padding: 200px 0px;
 
-  background-image: 
-    linear-gradient(to right, 
+  background-image: linear-gradient(to right, 
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
@@ -158,9 +157,11 @@ button.white {
 }
 
 .features-list .item {
+
   /* display: inline-block; */
   margin-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
+
   /* width: 270px; */
 }
 
@@ -189,25 +190,15 @@ button.white {
   margin: 0px;
 }
 
-/* .features-list li::before {
-  content: "";
-  display: block;
-  outline: 1px solid black;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  height: 120px;
-  background-color: #F5F4FA; */
-  /* background-repeat: no-repeat;
-  background-position: center; */}
-
 .icon-features {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
-  outline: 1px solid black;
+  
+  /* outline: 1px solid black; */
+  border-radius: 4px;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -400,10 +391,12 @@ a.down-contacts {
   
   margin-top: -30px;
   margin-left: -30px;
+
   /* outline: 1px solid tomato; */
 }
 
 .projects>li {
+
   /* outline: 1px solid blue; */
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
@@ -424,9 +417,49 @@ a.down-contacts {
   display: flex;
   margin-right: 10px;
   fill: currentColor;
+
 }
 
 .icon:hover,
 .icon:active {
   color: var(--accent-color);
+}
+
+.media-area:hover,
+.media-area:active {
+  background-color: var(--accent-color);
+}
+
+.media:hover,
+.media:active {
+  fill: #ffffff;
+}
+
+.social-media {
+  display: flex;
+  margin: 16px 32px 30px;
+}
+
+.social-media li + li {
+  margin-left: 10px;
+}
+
+.media-area {
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1B8;
+  border-radius: 50%;
+  /* color: currentColor; */
+}
+
+.media {
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  fill: currentColor;
 }
