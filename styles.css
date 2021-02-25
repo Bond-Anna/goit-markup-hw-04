@@ -287,18 +287,14 @@ footer {
   background: #2F303A;
 }
 
-.down .logo{
+.down .logo {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .down-address p {
   margin: 0px;
-}
-
-.down-address {
-  padding-bottom: 60px;
 }
 
 .down-address li:not(:last-child){
@@ -320,6 +316,37 @@ a.down-contacts {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
+}
+
+.join h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 10px;
+  color: var(--text-white);
+}
+
+.join {
+  margin-left: 70px;
+}
+
+.join .social-media {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.join .media-area {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-white)
 }
 
 /* Portfolio */
@@ -396,8 +423,6 @@ a.down-contacts {
 }
 
 .projects>li {
-
-  /* outline: 1px solid blue; */
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -417,7 +442,6 @@ a.down-contacts {
   display: flex;
   margin-right: 10px;
   fill: currentColor;
-
 }
 
 .icon:hover,
@@ -448,13 +472,13 @@ a.down-contacts {
   text-decoration: none;
   width: 44px;
   height: 44px;
+
   /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
   color: #AFB1B8;
   border-radius: 50%;
-  /* color: currentColor; */
 }
 
 .media {
@@ -462,4 +486,43 @@ a.down-contacts {
   height: 20px;
   padding: 12px;
   fill: currentColor;
+}
+
+.clients {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.clients-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #AFB1B8;
+  border: 1px solid;
+}
+
+.clients li + li {
+  margin-left: 30px;
+}
+
+.card {
+  fill: currentColor;
+}
+
+/* .card:hover,
+.card:active {
+  color: var(--accent-color);
+} */
+
+.clients-card:hover,
+.clients-card:active {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
